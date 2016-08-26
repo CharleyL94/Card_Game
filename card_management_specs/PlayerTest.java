@@ -6,14 +6,23 @@ import card_management.*;
 public class PlayerTest {
 
   Player player;
+  Hand hand;
 
+// Default example
   @Before
   public void before(){
     player = new Player("Charley");
+    // hand = new Hand(SuitType.SPADES, RankType.ACE);
   }
 
+// Test getName method
   @Test
   public void canNamePlayer(){
-    asserEquals()
+    assertEquals("Charley", player.getName());
   }
+
+  // @Test
+  // public void canGetHand(){
+  //   assertEquals(player.getHand, ());
+  // }
 }

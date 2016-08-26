@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Player{
 
+
   String name;
   Hand hand;
 
@@ -11,10 +12,14 @@ public class Player{
     this.name = name;
   }
 
+// get name method
   public String getName(){
     return this.name;
   }
 
+// set hand method
+  
+// get hand method
   public Hand getHand(){
     return this.hand;
   }

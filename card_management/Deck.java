@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Deck{
 
-// private Card[] cards;
+
   private ArrayList<Card> cards;
 
   public Deck(){
@@ -29,4 +29,16 @@ public class Deck{
   public void shuffle(){
     Collections.shuffle(cards);
   }
+
+// deal method
+  public void deal(){
+    deck.fullDeck();
+    for (int i = 0; i < 2; i++){
+      for (Player player : player){
+        player.getHand().recieveACard(deck.dealACard());
+      }
+    }
+  }
+
+  
 }
