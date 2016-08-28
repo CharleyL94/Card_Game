@@ -9,9 +9,7 @@ public class Deck{
   private ArrayList<Card> cards;
 
   public Deck(){
-  // this.cards = new Card [52];
-    this.cards = new ArrayList<Card>();
-    buildDeck();
+    this.cards = new ArrayList<Card>();  
   }
 
   public void buildDeck(){
@@ -26,19 +24,29 @@ public class Deck{
     return this.cards;
   }
 
+  public int getDeckSize(){
+    return cards.size();
+  }
+
   public void shuffle(){
     Collections.shuffle(cards);
   }
 
-// deal method
-  public void deal(){
-    deck.fullDeck();
-    for (int i = 0; i < 2; i++){
-      for (Player player : player){
-        player.getHand().recieveACard(deck.dealACard());
-      }
-    }
-  }
+  // public void printDeck(){
+  //   for( Card card : cards){
+  //     // card.printCard();
+  //   }
+  // }
+
+// deal method can't get this mthod to work- would like to go over a counter
+  // public void deal(){
+  //   deck.fullDeck();
+  //   for (int i = 0; i < 2; i++){
+  //     for (Player player : player){
+  //       player.getHand().recieveACard(deck.dealACard());
+  //     }
+  //   }
+  // }
 
   
 }

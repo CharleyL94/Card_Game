@@ -17,4 +17,13 @@ public class Game{
 // and compare
   // pint winner
 
+  public void beginGame(){
+    deck.shuffle();
+  }
+
+  // String name1 = getName();
+  // Player player1 = new Player(name1);
+
+  // String name2 = getName();
+  // Player player2 = new Player(name2);
 }

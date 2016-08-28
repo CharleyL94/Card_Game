@@ -1,4 +1,6 @@
 package card_management;
+import card_management.*;
+import java.util.*;
 
 public class Card{
   SuitType suit;
@@ -16,5 +18,10 @@ public class Card{
   public RankType getRank(){
     return rank;
   }
+
+    // public String toString() {
+    //   return rank.toString() + " of " + suit.toString();
+    // }
+
 
 }

@@ -23,4 +23,12 @@ public class Player{
   public Hand getHand(){
     return this.hand;
   }
+
+  // public void printHand(){
+  //   hand = getHand();
+  //   for (Card card : hand) {
+  //     card.printCard();
+  //   }
+  //   System.out.println();
+  // }
 }
