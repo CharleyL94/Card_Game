@@ -4,9 +4,12 @@ import java.util.*;
 public class Hand{
 
   private ArrayList<Card> hand;
+  private Card card;
+  private Deck deck;
 
   public Hand(){
     this.hand = new ArrayList<Card>();
+    this.deck = deck;
   }
 
 //hand recieves a card 

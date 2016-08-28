@@ -13,10 +13,6 @@ public class Game{
     this.deck = deck;
   }
 
-  // calculate hand
-// and compare
-  // pint winner
-
   public void beginGame(){
     deck.shuffle();
   }

@@ -6,35 +6,40 @@ import java.util.*;
 public class Deck{
 
 
-  private ArrayList<Card> cards;
+  private ArrayList<Card> deck;
 
   public Deck(){
-    this.cards = new ArrayList<Card>();  
+    this.deck = new ArrayList<Card>();  
   }
 
   public void buildDeck(){
     for( SuitType suit : SuitType.values()) {
       for ( RankType rank : RankType.values()){
-        cards.add(new Card(suit, rank));
+        deck.add(new Card(suit, rank));
       }
     }
   }
 
   public ArrayList<Card> getCards(){
-    return this.cards;
+    return this.deck;
   }
 
   public int getDeckSize(){
-    return cards.size();
+    return deck.size();
   }
 
   public void shuffle(){
-    Collections.shuffle(cards);
+    Collections.shuffle(deck);
   }
 
+  public void dealCard() {
+     Card card = deck.remove(0);
+   }
+
+  // Unsure what to name in brackets- currently not working 
   // public void printDeck(){
-  //   for( Card card : cards){
-  //     // card.printCard();
+  //   for( Card card : deck){
+  //     deck.printCard();
   //   }
   // }
 

@@ -16,14 +16,13 @@ public class Player{
   public String getName(){
     return this.name;
   }
-
-// set hand method
   
 // get hand method
   public Hand getHand(){
     return this.hand;
   }
-
+  
+  // Currently not working
   // public void printHand(){
   //   hand = getHand();
   //   for (Card card : hand) {

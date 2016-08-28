@@ -19,6 +19,10 @@ public class Card{
     return rank;
   }
 
+  // public int getValue() {
+  //       return rank.getValue();
+  //     } 
+
     // public String toString() {
     //   return rank.toString() + " of " + suit.toString();
     // }
