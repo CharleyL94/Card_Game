@@ -16,8 +16,13 @@ public class DeckTest {
 //test build deck method 
   @Test
   public void canBuildDeck(){
+    deck.buildDeck();
     assertEquals(deck.getCards().size(),52);
   }
+
+  
+
+
 // test shuffle method
   // @Test
   // public void canShuffleDeck(){
